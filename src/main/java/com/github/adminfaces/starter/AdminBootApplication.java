@@ -13,7 +13,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 package com.github.adminfaces.starter;
 
 import com.github.adminfaces.starter.model.Car;
@@ -28,12 +27,13 @@ import org.springframework.context.annotation.Bean;
  */
 @SpringBootApplication
 public class AdminBootApplication {
-	@Inject
-	private Utils utils;
+
+    @Inject
+    private Utils utils;
 
     @Bean
     public List<Car> getCars() {
         return utils.getCars();
     }
-	
+
 }
